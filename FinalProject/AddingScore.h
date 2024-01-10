@@ -3,8 +3,7 @@
 
 #include "global.h"
 
-class AddingScore
-{
+class AddingScore {
 public:
 	AddingScore();
 	~AddingScore();

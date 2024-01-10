@@ -3,8 +3,7 @@
 
 #include "global.h"
 
-enum class CharacterState
-{
+enum class CharacterState {
 	LEFT,
 	RIGHT,
 	IDLE,

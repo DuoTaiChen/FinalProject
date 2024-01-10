@@ -4,16 +4,14 @@
 #include "Global.h"
 #include "Ball.h"
 
-enum class EndState
-{
+enum class EndState {
 	ENDSCENE,
 	MENU,
 	RESTART,
 	EXIT,
 };
 
-class EndScene
-{
+class EndScene {
 public:
 	EndScene(double record);
 	~EndScene();

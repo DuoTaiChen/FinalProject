@@ -6,8 +6,7 @@
 #include"AddingScore.h"
 #include"Lightning.h"
 
-class MainScene
-{
+class MainScene {
 public:
 	MainScene();
 
@@ -25,7 +24,7 @@ private:
 
 	std::unordered_set<Ball*> ball_set;
 	int ballGenCounter;
-	
+
 	std::unordered_set<Lightning*> lightning_set;
 	int lightningGenCounter;
 

@@ -5,16 +5,14 @@
 #include "Ball.h"
 #include "Lightning.h"
 
-enum class MenuState
-{
+enum class MenuState {
 	MENU,
 	GAME,
 	TUTORIAL,
 	EXIT,
 };
 
-class Menu
-{
+class Menu {
 public:
 	Menu();
 	~Menu();
@@ -23,14 +21,14 @@ public:
 private:
 	void Init();
 	void Destroy();
-	bool IsHover(int targetX,int targetY);
+	bool IsHover(int targetX, int targetY);
 
 	MenuState state;
-	ALLEGRO_FONT *titleFont;
-	ALLEGRO_FONT *buttonFont;
-	ALLEGRO_EVENT_QUEUE *event_queue;
+	ALLEGRO_FONT* titleFont;
+	ALLEGRO_FONT* buttonFont;
+	ALLEGRO_EVENT_QUEUE* event_queue;
 	ALLEGRO_EVENT event;
-	ALLEGRO_TIMER *timer;
+	ALLEGRO_TIMER* timer;
 	ALLEGRO_DISPLAY* display;
 
 	ALLEGRO_SAMPLE* menuMusic;

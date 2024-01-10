@@ -93,8 +93,7 @@ void EndScene::Update() {
 		menuIsHover = IsHover(menuX, menuY);
 		exitIsHover = IsHover(exitX, exitY);
 
-		if (!mouseInHover && (restartIsHover || menuIsHover || exitIsHover))
-		{
+		if (!mouseInHover && (restartIsHover || menuIsHover || exitIsHover)) {
 			al_play_sample(hoverSFX, 1, 0, 1, ALLEGRO_PLAYMODE_ONCE, NULL);
 		}
 	}

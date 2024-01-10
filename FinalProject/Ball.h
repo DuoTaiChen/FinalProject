@@ -3,14 +3,12 @@
 
 #include "global.h"
 
-enum class FromLorR
-{
+enum class FromLorR {
 	LEFT,
 	RIGHT
 };
 
-class Ball
-{
+class Ball {
 public:
 	Ball(FromLorR fromLorR);
 	~Ball();

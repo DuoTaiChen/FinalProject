@@ -27,7 +27,7 @@ void MainScene::game_init() {
 	backGroundMusicInstance = al_create_sample_instance(backGroundMusic);
 
 	al_set_sample_instance_playmode(backGroundMusicInstance, ALLEGRO_PLAYMODE_LOOP);
-	al_set_sample_instance_gain(backGroundMusicInstance,1);
+	al_set_sample_instance_gain(backGroundMusicInstance, 1);
 	al_attach_sample_instance_to_mixer(backGroundMusicInstance, al_get_default_mixer());
 	al_play_sample_instance(backGroundMusicInstance);
 
@@ -158,7 +158,7 @@ void MainScene::Update() {
 			if ((*addingScore_it)->IsCollision(character->GetX(), character->GetY())) {
 				bonus += (*addingScore_it)->GetScore();
 				addingScore_it = addScore_set.erase(addingScore_it);
-				al_play_sample(scoreSFX,1,0,1,ALLEGRO_PLAYMODE_ONCE,NULL);
+				al_play_sample(scoreSFX, 1, 0, 1, ALLEGRO_PLAYMODE_ONCE, NULL);
 			}
 			else {
 				(*addingScore_it)->Draw();

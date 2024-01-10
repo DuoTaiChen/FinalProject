@@ -27,8 +27,7 @@ void Character::Update() {
 
 void Character::Draw() {
 	al_draw_rectangle(x - halfCharacterWidth, y - halfCharacterWidth, x + halfCharacterWidth, y + halfCharacterWidth, al_map_rgb(255, 255, 255), 5.0);
-	switch (state)
-	{
+	switch (state) {
 	case CharacterState::LEFT:
 		al_draw_filled_rectangle(
 			x - halfCharacterWidth + 0.2 * character_width, y - halfCharacterWidth + 0.3 * character_width,

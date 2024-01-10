@@ -21,8 +21,7 @@ void Lightning::Destroy() {
 }
 
 void Lightning::Update() {
-	switch (state)
-	{
+	switch (state) {
 	case LightningState::PREVIEW:
 		previewCounter++;
 		if (previewCounter == lightning_preview_consist_time) {
@@ -43,8 +42,7 @@ void Lightning::Update() {
 }
 
 void Lightning::Draw() {
-	switch (state)
-	{
+	switch (state) {
 	case LightningState::PREVIEW:
 		if (previewCounter % (lightning_preview_interval_time * 2) - lightning_preview_interval_time < 0) {
 			al_draw_line(x, 0, x, ground, al_map_rgb(255, 255, 255), lightning_preview_thickness);

@@ -2,8 +2,7 @@
 #include "Menu.h"
 #include "EndScene.h"
 
-enum class Scene
-{
+enum class Scene {
 	MENU,
 	GAME,
 	END,
@@ -59,19 +58,16 @@ void enterEndScene(double record) {
 	delete end;
 }
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
 	state = Scene::MENU;
-	double record=0;
-	while (state != Scene::EXIT)
-	{
-		switch (state)
-		{
+	double record = 0;
+	while (state != Scene::EXIT) {
+		switch (state) {
 		case Scene::MENU:
 			enterMenu();
 			break;
 		case Scene::GAME:
-			record=enterGame();
+			record = enterGame();
 			break;
 		case Scene::END:
 			enterEndScene(record);

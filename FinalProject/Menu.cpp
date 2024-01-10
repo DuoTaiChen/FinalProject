@@ -92,9 +92,8 @@ void Menu::Update() {
 		tutorialIsHover = IsHover(tutorialX, tutorialY);
 		exitIsHover = IsHover(exitX, exitY);
 
-		if (!mouseInHover && (startIsHover || tutorialIsHover || exitIsHover))
-		{
-			al_play_sample(hoverSFX,1,0,1,ALLEGRO_PLAYMODE_ONCE,NULL);
+		if (!mouseInHover && (startIsHover || tutorialIsHover || exitIsHover)) {
+			al_play_sample(hoverSFX, 1, 0, 1, ALLEGRO_PLAYMODE_ONCE, NULL);
 		}
 	}
 
